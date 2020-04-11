@@ -47,7 +47,6 @@ public class Wave implements Component, Clocked {
                 tickSinceLastRead = 0;
                 data = WaveRAMController.read(address);
             } else data = 0xFF;
-            System.out.println(String.format("Read   0x%x    @0x%x", data, address));
             return data;
         }
         return NO_DATA;
