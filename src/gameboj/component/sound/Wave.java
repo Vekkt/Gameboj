@@ -12,7 +12,7 @@ import static gameboj.AddressMap.*;
 import static gameboj.Preconditions.*;
 
 public class Wave implements Component, Clocked {
-    protected enum Reg implements Register { NR0, NR1, NR2, NR3, NR4 }
+    protected enum Reg implements Register { NR30, NR31, NR2, NR33, NR34 }
     protected final RegisterFile<Reg> regFile = new RegisterFile<>(Reg.values());
 
     private final static int[] READ_BACKS = { 0x7F, 0xFF, 0x9F, 0xFF, 0xBF };
